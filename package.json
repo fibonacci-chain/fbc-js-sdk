@@ -1,0 +1,33 @@
+{
+  "name": "fbc-js-sdk",
+  "version": "1.0.0",
+  "description": "Fibonacci SDK from javaScript",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "npm publish .",
+    "test": " node bin/badge.js -t js -n q "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fibonacci-chain/fbc-js-sdk.git"
+  },
+  "keywords": [
+    "React",
+    "Fibonacci"
+  ],
+  "author": "Eilian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fibonacci-chain/fbc-js-sdk/issues"
+  },
+  "homepage": "https://github.com/fibonacci-chain/fbc-js-sdk#readme",
+  "dependencies": {
+    "bech32": "^2.0.0",
+    "buffer": "^6.0.3"
+  },
+  "devDependencies": {
+  },
+  "files": [
+    "lib/*"
+  ]
+}
