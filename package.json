@@ -1,12 +1,12 @@
 {
   "name": "fbc-js-sdk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fibonacci SDK from javaScript",
   "main": "lib/index.js",
   "scripts": {
     "build": "rm -rf lib && npx babel src -d lib",
     "start": "npm publish .",
-    "test": " node bin/badge.js -t js -n q "
+    "test": "cross-env NODE_ENV=test jest"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,10 @@
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "@babel/preset-env": "^7.22.9",
-    "babel-cli": "^6.26.0"
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^29.3.1",
+    "jest": "^29.3.1",
+    "cross-env": "^5.2.1"
   },
   "files": [
     "lib/*"
